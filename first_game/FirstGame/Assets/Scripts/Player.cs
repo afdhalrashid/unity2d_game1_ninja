@@ -6,6 +6,7 @@ public class Player : MonoBehaviour {
     private Rigidbody2D myrigidBody;
     [SerializeField]
     private float character_speed = 3;
+    private bool facingRight;
 
 	// Use this for initialization
 	void Start () {
@@ -32,5 +33,10 @@ public class Player : MonoBehaviour {
     {
 
         myrigidBody.velocity = new Vector2(h * character_speed, myrigidBody.velocity.y);
+    }
+
+    private void flip(float flip)
+    {
+
     }
 }
